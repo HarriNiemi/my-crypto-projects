@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MyFileCrypto/MyFileCrypto.csproj" />
+  <Project Path="MyTextCrypto/MyTextCrypto.csproj" />
+  <Project Path="WinFormsApp2/WinFormsApp2.csproj" />
+</Solution>
