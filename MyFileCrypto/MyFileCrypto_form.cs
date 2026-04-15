@@ -1,45 +1,119 @@
 using System.Security.Cryptography;
 using System.Text;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyFileCrypto
 {
     public partial class MyFileCrypto_form : Form
     {
         const string AppInfo = "My File Crypto";
-        const string VerInfo = "Ver-1.0-(2026-04-13)";
+        const string VerInfo = "Ver-1.0-(2026-04-15)";
 
         string theKey = "HARRI21101963173";
         string theIV = "3141592653589793";
 
-        string inputFile = "pw_crypt.txt";
-        string outputFile = "pw.txt";
+        string cryptFile = "pw_crypt.txt";
+        string plainFile = "pw.txt";
 
-        string inputFilePath = null;
-        string outputFilePath = null;
-
-        string UG_APP_DIR = "";
+        string cryptFilePath = null;
+        string plainFilePath = null;
+        string dirPath = null;
 
         public MyFileCrypto_form()
         {
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Text = AppInfo + " : " + VerInfo;
+
+            dirPath = AppDomain.CurrentDomain.BaseDirectory;
+
+            textBox3.Text = dirPath;
+
+            textBox1.Text = cryptFile;
+            textBox2.Text = plainFile;
+
+            cryptFilePath = dirPath + "\\" + cryptFile;
+            plainFilePath = dirPath + "\\" + plainFile;
+
+            button2.Enabled = false;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string boxText = "";
 
-            DecryptFile(inputFilePath, outputFilePath, theKey, theIV);
+            richTextBox1.Clear();
 
-            ReadImputFileText(outputFilePath, ref boxText);
+            openFileDialog1.InitialDirectory = dirPath;
 
-            richTextBox1.Text = boxText;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = Path.GetFileName(openFileDialog1.FileName);
+
+                textBox3.Text = Path.GetDirectoryName(openFileDialog1.FileName);
+
+                dirPath = textBox3.Text;
+
+                cryptFile = textBox1.Text;
+
+                cryptFilePath = openFileDialog1.FileName;
+
+                plainFile = Path.GetFileNameWithoutExtension(cryptFile) + "_plain" + Path.GetExtension(cryptFile);
+
+                plainFilePath = dirPath + "\\" + plainFile;
+
+                textBox2.Text = plainFile;
+
+                DecryptFile(cryptFilePath, plainFilePath, theKey, theIV);
+
+                ReadImputFileText(plainFilePath, ref boxText);
+
+                richTextBox1.Text = boxText;
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            WriteOutputFileText(outputFilePath, richTextBox1.Text);
+            WriteOutputFileText(plainFilePath, richTextBox1.Text);
 
-            EncryptFile(outputFilePath, inputFilePath, theKey, theIV);
+            EncryptFile(plainFilePath, cryptFilePath, theKey, theIV);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string boxText = "";
+
+            richTextBox1.Clear();
+
+            openFileDialog1.InitialDirectory = dirPath;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox2.Text = Path.GetFileName(openFileDialog1.FileName);
+
+                textBox3.Text = Path.GetDirectoryName(openFileDialog1.FileName);
+
+                dirPath = textBox3.Text;
+
+                plainFile = textBox2.Text;
+
+                plainFilePath = openFileDialog1.FileName;
+
+                cryptFile = Path.GetFileNameWithoutExtension(plainFile) + "_crypt" + Path.GetExtension(plainFile);
+
+                cryptFilePath = dirPath + "\\" + cryptFile;
+
+                textBox1.Text = cryptFile;
+
+                ReadImputFileText(plainFilePath, ref boxText);
+
+                richTextBox1.Text = boxText;
+            }
         }
 
         private void EncryptFile(string inputFile, string outputFile, string skey, string sIV)
@@ -128,20 +202,14 @@ namespace MyFileCrypto
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.Text = AppInfo + " : " + VerInfo;
-
-            UG_APP_DIR = AppDomain.CurrentDomain.BaseDirectory;
-
-            inputFilePath = UG_APP_DIR + "\\" + inputFile;
-            outputFilePath = UG_APP_DIR + "\\" + outputFile;
-
-        }
-
         private void MyFileCrypto_form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (File.Exists(outputFilePath)) File.Delete(outputFilePath);
+            // if (File.Exists(plainFilePath)) File.Delete(plainFilePath);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text.Length > 0) button2.Enabled = true;
         }
     }
 }

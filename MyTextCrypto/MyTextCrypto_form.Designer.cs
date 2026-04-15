@@ -138,6 +138,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "MyTextCrypto_form";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += MyTextCrypto_form_Load;
             ResumeLayout(false);
