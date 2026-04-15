@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Title>File Encrypting application</Title>
+	<VersionPrefix>1.0</VersionPrefix>
+	<Authors>Harri Niemi</Authors>
+	<Copyright>Harri Niemi 2026</Copyright> 
   </PropertyGroup>
 
 </Project>

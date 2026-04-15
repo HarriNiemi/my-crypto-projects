@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD7BA99F-5C9E-CC33-B5F8-7FD20D8C4B7C}|MyFileCrypto\\MyFileCrypto.csproj|d:\\visual studio 2026\\myprojects\\mycryptoprojects\\myfilecrypto\\myfilecrypto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD7BA99F-5C9E-CC33-B5F8-7FD20D8C4B7C}|MyFileCrypto\\MyFileCrypto.csproj|solutionrelative:myfilecrypto\\myfilecrypto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD7BA99F-5C9E-CC33-B5F8-7FD20D8C4B7C}|MyFileCrypto\\MyFileCrypto.csproj|D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\myfilecrypto\\myfilecrypto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BD7BA99F-5C9E-CC33-B5F8-7FD20D8C4B7C}|MyFileCrypto\\MyFileCrypto.csproj|d:\\visual studio 2026\\myprojects\\mycryptoprojects\\myfilecrypto\\myfilecrypto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BD7BA99F-5C9E-CC33-B5F8-7FD20D8C4B7C}|MyFileCrypto\\MyFileCrypto.csproj|solutionrelative:myfilecrypto\\myfilecrypto_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,26 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyFileCrypto_form.cs",
-              "DocumentMoniker": "D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\MyFileCrypto\\MyFileCrypto_form.cs",
-              "RelativeDocumentMoniker": "MyFileCrypto\\MyFileCrypto_form.cs",
-              "ToolTip": "D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\MyFileCrypto\\MyFileCrypto_form.cs",
-              "RelativeToolTip": "MyFileCrypto\\MyFileCrypto_form.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAAAM4AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T14:58:30.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MyFileCrypto_form.cs [Design]",
               "DocumentMoniker": "D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\MyFileCrypto\\MyFileCrypto_form.cs",
               "RelativeDocumentMoniker": "MyFileCrypto\\MyFileCrypto_form.cs",
               "ToolTip": "D:\\Visual Studio 2026\\MyProjects\\MyCryptoProjects\\MyFileCrypto\\MyFileCrypto_form.cs [Design]",
               "RelativeToolTip": "MyFileCrypto\\MyFileCrypto_form.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T14:57:04.419Z",
+              "WhenOpened": "2026-04-15T10:49:51.152Z",
               "EditorCaption": " [Design]"
             }
           ]

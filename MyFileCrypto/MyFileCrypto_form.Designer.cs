@@ -92,17 +92,22 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(216, 18);
+            textBox1.BackColor = SystemColors.Control;
+            textBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(216, 17);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(266, 23);
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(266, 25);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Location = new Point(216, 52);
+            textBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(216, 51);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(266, 23);
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(266, 25);
             textBox2.TabIndex = 3;
             // 
             // label1
@@ -118,9 +123,11 @@
             // textBox3
             // 
             textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox3.Location = new Point(51, 123);
+            textBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(51, 122);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(431, 23);
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(431, 25);
             textBox3.TabIndex = 3;
             // 
             // MyFileCrypto_form
