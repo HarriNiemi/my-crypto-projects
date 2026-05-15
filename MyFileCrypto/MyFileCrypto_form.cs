@@ -211,5 +211,7 @@ namespace MyFileCrypto
         {
             if (richTextBox1.Text.Length > 0) button2.Enabled = true;
         }
+
+
     }
 }

@@ -46,7 +46,6 @@
             richTextBox1.Location = new Point(10, 158);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
-            richTextBox1.ShortcutsEnabled = false;
             richTextBox1.Size = new Size(472, 291);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
