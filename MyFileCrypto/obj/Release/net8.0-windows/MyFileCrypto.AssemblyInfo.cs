@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Harri Niemi 2026")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+884c18edf853e30585cbba981c4b1eba932eb663")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3cc74541ced64d33c46b55a74457836faaffe495")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyFileCrypto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyFileCrypto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
